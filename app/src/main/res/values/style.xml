@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NoAnimationBottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="android:animateLayoutChanges">false</item>
+        <item name="android:transitionGroup">false</item>
+    </style>
+</resources>

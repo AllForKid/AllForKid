@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/tapMain"
+        android:icon="@drawable/icon_main"
+        android:title=""/>
+
+    <item
+        android:id="@+id/tapSearch"
+        android:icon="@drawable/icon_search"
+        android:title=""/>
+
+    <item
+        android:id="@+id/tapMap"
+        android:icon="@drawable/icon_map"
+        android:title=""/>
+
+    <item
+        android:id="@+id/tapCommunity"
+        android:icon="@drawable/icon_community"
+        android:title=""/>
+
+    <item
+        android:id="@+id/tapSetting"
+        android:icon="@drawable/icon_setting"
+        android:title=""/>
+</menu>
