@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 체크박스 선택 상태 -->
+    <item android:state_checked="true"
+        android:drawable="@drawable/img_checkbox_checked"/>
+    <item android:drawable="@drawable/img_checkbox_unchecked"/>
+</selector>

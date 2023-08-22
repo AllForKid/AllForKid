@@ -2,4 +2,9 @@
     <string name="app_name">AllForKids_AOS</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="withdrawal_precautions1">회원 탈퇴 시 계정과 관련된 정보는 복구가 불가능합니다.</string>
+    <string name="withdrawal_precautions2">기존에 작성한 게시글과 댓글, 나눔장터는 삭제되지 않고 유지됩니다. 등록한 게시글과 댓글을 삭제하기 원하신다면 탈퇴 전 삭제해 주시기 바랍니다.</string>
+    <string name="withdrawal_precautions3">좋아요나 찜 내역, 알림 설정한 게시글 정보, 신고 내역, 차단 내역 등은 모두 소멸되며 복구되지 않습니다.</string>
+    <string name="withdrawal_precautions4">탈퇴 후 7일 동안은 동일한 이메일 주소로 재가입하실 수 없습니다.</string>
+    <string name="announcement_detail_content">안녕하세요.\n2023년 8월 2.4v 업데이트 일정 및 업데이트 될 항목에 대해 안내를 드리고자 합니다.\n.\n.\n.\n.\n.\n\n감사합니다.</string>
 </resources>
