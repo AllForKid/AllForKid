@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/titlePurple">
+        android:background="@color/titleBlue">
 
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
@@ -185,9 +185,10 @@
                         android:textFontWeight="400"
                         android:textSize="14dp" />
 
-                    <Switch
+                    <androidx.appcompat.widget.SwitchCompat
                         android:layout_width="45dp"
                         android:layout_height="24dp"
+                        app:switchMinWidth="24dp"
                         android:layout_marginLeft="218dp"
                         android:layout_marginRight="21dp" />
 
@@ -379,6 +380,7 @@
                     android:textSize="14dp" />
 
                 <TextView
+                    android:id="@+id/tv_withdrawal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_bold"
