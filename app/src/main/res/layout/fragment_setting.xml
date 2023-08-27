@@ -205,40 +205,41 @@
 
             <GridLayout
                 android:id="@+id/gridlayout"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:columnCount="1"
                 android:orientation="vertical"
                 android:rowCount="5"
-                android:columnCount="1"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/view">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
                     android:fontFamily="@font/roboto_bold"
                     android:text="나의 여행"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginStart="16dp"
                     android:textColor="@color/black"
                     android:textFontWeight="600"
                     android:textSize="14dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_bold"
                     android:lineHeight="22dp"
-                    android:text="찜해둔 여행지"
                     android:paddingVertical="14dp"
                     android:paddingStart="26dp"
+                    android:text="찜해둔 여행지"
                     android:textColor="@color/black"
                     android:textFontWeight="400"
                     android:textSize="14dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_bold"
                     android:lineHeight="22dp"
@@ -250,7 +251,7 @@
                     android:textSize="14dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_bold"
                     android:lineHeight="22dp"
@@ -262,13 +263,13 @@
                     android:textSize="14dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_bold"
                     android:lineHeight="22dp"
-                    android:text="차단한 사용자"
                     android:paddingVertical="14dp"
                     android:paddingStart="26dp"
+                    android:text="차단한 사용자"
                     android:textColor="@color/black"
                     android:textFontWeight="400"
                     android:textSize="14dp" />
@@ -282,98 +283,109 @@
 
             <GridLayout
                 android:id="@+id/gridlayout2"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:columnCount="1"
                 android:orientation="vertical"
                 android:rowCount="8"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/view2">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="20dp"
                     android:fontFamily="@font/roboto_bold"
                     android:text="기타"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginTop="32dp"
                     android:textColor="@color/black"
                     android:textFontWeight="600"
                     android:textSize="14dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_bold"
                     android:lineHeight="22dp"
+                    android:paddingHorizontal="26dp"
+                    android:paddingVertical="14dp"
                     android:text="고객센터"
-                    android:paddingVertical="14dp"
-                    android:paddingHorizontal="26dp"
                     android:textColor="@color/black"
                     android:textFontWeight="400"
                     android:textSize="14dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_bold"
                     android:lineHeight="22dp"
+                    android:paddingHorizontal="26dp"
+                    android:paddingVertical="14dp"
                     android:text="공지사항"
-                    android:paddingVertical="14dp"
-                    android:paddingHorizontal="26dp"
                     android:textColor="@color/black"
                     android:textFontWeight="400"
                     android:textSize="14dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_bold"
-                    android:paddingVertical="14dp"
-                    android:paddingHorizontal="26dp"
                     android:lineHeight="22dp"
+                    android:paddingHorizontal="26dp"
+                    android:paddingVertical="14dp"
                     android:text="약관 및 개인정보처리방침"
                     android:textColor="@color/black"
                     android:textFontWeight="400"
                     android:textSize="14dp" />
 
-                <LinearLayout
+
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <TextView
-                        android:paddingVertical="14dp"
-                        android:paddingHorizontal="26dp"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto_bold"
                         android:lineHeight="22dp"
+                        android:paddingHorizontal="26dp"
+                        android:paddingVertical="14dp"
                         android:text="앱 버전"
                         android:textColor="@color/black"
                         android:textFontWeight="400"
-                        android:textSize="14dp" />
+                        android:textSize="14dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto_bold"
+                        android:layout_marginStart="304dp"
+                        android:fontFamily="@font/roboto"
                         android:lineHeight="22px"
                         android:text="2.07.9"
-                        android:paddingStart="209dp"
-                        android:textColor="#94b49f"
                         android:textAlignment="textEnd"
+                        android:textColor="#94b49f"
                         android:textFontWeight="400"
-                        android:textSize="14dp" />
-                </LinearLayout>
+                        android:textSize="14dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/textView2"
+                        app:layout_constraintTop_toTopOf="@+id/textView2" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_bold"
-                    android:paddingVertical="14dp"
-                    android:paddingHorizontal="26dp"
                     android:lineHeight="22dp"
+                    android:paddingHorizontal="26dp"
+                    android:paddingVertical="14dp"
                     android:text="로그아웃"
                     android:textColor="@color/black"
                     android:textFontWeight="400"
@@ -381,13 +393,13 @@
 
                 <TextView
                     android:id="@+id/tv_withdrawal"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_bold"
-                    android:paddingVertical="14dp"
-                    android:paddingHorizontal="26dp"
                     android:layout_marginBottom="80dp"
+                    android:fontFamily="@font/roboto_bold"
                     android:lineHeight="22dp"
+                    android:paddingHorizontal="26dp"
+                    android:paddingVertical="14dp"
                     android:text="탈퇴하기"
                     android:textColor="@color/black"
                     android:textFontWeight="400"

@@ -52,6 +52,7 @@
             android:textColor="@color/black"
             android:lineHeight="20dp"
             android:textSize="16sp"
+            android:textStyle="bold"
             android:visibility="invisible"/>
         <TextView
             android:id="@+id/appbar_birth_change"
@@ -66,6 +67,7 @@
             android:textColor="@color/black"
             android:lineHeight="20dp"
             android:textSize="16sp"
+            android:textStyle="bold"
             android:visibility="invisible"/>
 
         <TextView
@@ -81,6 +83,7 @@
             android:textColor="@color/black"
             android:lineHeight="20dp"
             android:textSize="16sp"
+            android:textStyle="bold"
             android:visibility="invisible"/>
 
 

@@ -10,7 +10,7 @@
 
     <include
         android:id="@+id/actionbar"
-        layout="@layout/actionbar_announcement"/>
+        layout="@layout/actionbar_blue"/>
 
     <ScrollView
         android:id="@+id/scroll_view"

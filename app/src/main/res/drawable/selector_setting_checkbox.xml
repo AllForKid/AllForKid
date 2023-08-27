@@ -1,6 +1,16 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- 체크박스 선택 상태 -->
-    <item android:state_checked="true"
-        android:drawable="@drawable/img_checkbox_checked"/>
-    <item android:drawable="@drawable/img_checkbox_unchecked"/>
+    <!-- 체크되었을 때의 스타일 -->
+    <item android:state_checked="true">
+        <layer-list>
+            <!-- 체크 표시를 위한 아이콘 -->
+            <item android:drawable="@drawable/img_checkbox_checked" />
+        </layer-list>
+    </item>
+
+    <!-- 체크되지 않았을 때의 스타일 -->
+    <item android:state_checked="false">
+        <layer-list>
+            <item android:drawable="@drawable/img_checkbox_unchecked" />
+        </layer-list>
+    </item>
 </selector>

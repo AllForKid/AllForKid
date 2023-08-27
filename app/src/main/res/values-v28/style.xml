@@ -15,4 +15,9 @@
         <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold</item>
     </style>
+    <style name="checkBoxTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorAccent">@color/titleBlue</item>
+        <item name="android:textColorSecondary">@color/titleBlue</item>
+        <item name="colorControlHighlight">@color/titleBlue</item>
+    </style>
 </resources>

@@ -8,7 +8,7 @@
 
     <include
         android:id="@+id/actionbar"
-        layout="@layout/actionbar_announcement"/>
+        layout="@layout/actionbar_blue"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_announcement"
