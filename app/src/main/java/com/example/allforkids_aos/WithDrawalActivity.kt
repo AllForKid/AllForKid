@@ -11,6 +11,9 @@ class WithDrawalActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         viewBinding = ActivityWithDrawalBinding.inflate(layoutInflater)
         setContentView(viewBinding.root)
+        viewBinding.actionbar.appbarBackBtn.setOnClickListener {
+            finish()
+        }
         viewBinding.appCompatButton.setOnClickListener {
             viewBinding.appCompatButton.isPressed = viewBinding.appCompatButton.isPressed != true
         }

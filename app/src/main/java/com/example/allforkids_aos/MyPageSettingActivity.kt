@@ -1,10 +1,12 @@
 package com.example.allforkids_aos
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.allforkids_aos.databinding.ActivityMyPageSettingBinding
 import com.example.allforkids_aos.model.BirthViewModel
@@ -22,21 +24,19 @@ class MyPageSettingActivity : AppCompatActivity() {
             val intent = Intent(this, MyPageBirthActivity::class.java)
             startActivity(intent)
         }
-
-        val viewModel = ViewModelProvider(this)[BirthViewModel::class.java]
-        viewModel.data.observe(this) { value ->
-            viewBinding.tvBirth.text = value
-        }
-
         viewBinding.editNickname.setOnClickListener{
             if (!validateNickname()) {
                 viewBinding.editLayoutNickname.error = "사용할 수 있는 닉네임입니다"
                 return@setOnClickListener
             }
-
-
-
         }
+    }
+    override fun onResume() {
+        super.onResume()
+        // SharedPreferences에서 데이터 읽어오기
+        val sharedPreferences = getSharedPreferences("birth", Context.MODE_PRIVATE)
+        val receivedData = sharedPreferences.getString("birth", "2000-01-01")
+        viewBinding.tvBirth.text = receivedData
     }
     private fun validateNickname(): Boolean {
         val value:String = viewBinding.editLayoutNickname.editText?.text.toString()
@@ -51,9 +51,5 @@ class MyPageSettingActivity : AppCompatActivity() {
             viewBinding.editLayoutNickname.error = null
             true
         }
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
     }
 }
