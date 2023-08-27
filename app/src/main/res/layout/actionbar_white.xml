@@ -37,7 +37,22 @@
             android:textColor="@color/black"
             android:lineHeight="20dp"
             android:textSize="16sp"
-            android:visibility="visible"/>
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/appbar_customer_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/appbar_layout"
+            app:layout_constraintBottom_toBottomOf="@id/appbar_layout"
+            android:layout_marginStart="51dp"
+            android:text="고객센터"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/black"
+            android:lineHeight="20dp"
+            android:textSize="16sp"
+            android:visibility="invisible"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

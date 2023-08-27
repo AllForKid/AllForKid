@@ -40,7 +40,7 @@
             android:visibility="invisible"/>
 
         <TextView
-            android:id="@+id/appbar_withdrawal"
+            android:id="@+id/appbar_notice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
@@ -54,6 +54,7 @@
             android:textSize="16sp"
             android:textStyle="bold"
             android:visibility="invisible"/>
+
         <TextView
             android:id="@+id/appbar_birth_change"
             android:layout_width="wrap_content"

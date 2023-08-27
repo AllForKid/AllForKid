@@ -3,6 +3,7 @@ package com.example.allforkids_aos
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.allforkids_aos.adapter.AnnouncementAdapter
@@ -15,6 +16,7 @@ class AnnouncementActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         viewBinding = ActivityAnnouncementBinding.inflate(layoutInflater)
         setContentView(viewBinding.root)
+        viewBinding.actionbar.appbarNotice.visibility = View.VISIBLE
 
         setupRecyclerView()
     }

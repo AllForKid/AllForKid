@@ -7,4 +7,5 @@
     <string name="withdrawal_precautions3">좋아요나 찜 내역, 알림 설정한 게시글 정보, 신고 내역, 차단 내역 등은 모두 소멸되며 복구되지 않습니다.</string>
     <string name="withdrawal_precautions4">탈퇴 후 7일 동안은 동일한 이메일 주소로 재가입하실 수 없습니다.</string>
     <string name="announcement_detail_content">안녕하세요.\n2023년 8월 2.4v 업데이트 일정 및 업데이트 될 항목에 대해 안내를 드리고자 합니다.\n.\n.\n.\n.\n.\n\n감사합니다.</string>
+    <string name="ask_letter_of_understanding">답변까지 1-5일의 시간이 소요됩니다. 순차적으로 확인 후 답변드릴 예정이오니 양해 부탁드립니다.</string>
 </resources>

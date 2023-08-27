@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import com.example.allforkids_aos.MyPageSettingActivity
 import com.example.allforkids_aos.R
 import com.example.allforkids_aos.ResetBadgeActivity
+import com.example.allforkids_aos.SupportHelpActivity
 import com.example.allforkids_aos.WithDrawalActivity
 import com.example.allforkids_aos.databinding.FragmentSettingBinding
 
@@ -34,6 +35,10 @@ class SettingFragment : Fragment() {
         }
         viewBinding.tvResetBadge.setOnClickListener {
             val intent = Intent(requireActivity(), ResetBadgeActivity::class.java)
+            startActivity(intent)
+        }
+        viewBinding.tvCustomerService.setOnClickListener {
+            val intent = Intent(requireActivity(), SupportHelpActivity::class.java)
             startActivity(intent)
         }
         return viewBinding.root
