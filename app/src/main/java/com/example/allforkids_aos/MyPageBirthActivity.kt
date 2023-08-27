@@ -1,16 +1,13 @@
 package com.example.allforkids_aos
 
 import android.content.Context
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import com.example.allforkids_aos.databinding.ActivityMyPageBirthBinding
 import com.example.allforkids_aos.model.BirthViewModel
-import com.example.allforkids_aos.model.BirthViewModel1
 import com.google.android.material.bottomsheet.BottomSheetBehavior
-import com.google.android.material.bottomsheet.BottomSheetDialog
 
 class MyPageBirthActivity : AppCompatActivity() {
     private lateinit var viewBinding: ActivityMyPageBirthBinding
