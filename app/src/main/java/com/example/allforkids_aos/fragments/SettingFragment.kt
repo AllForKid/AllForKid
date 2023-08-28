@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.allforkids_aos.AnnouncementActivity
 import com.example.allforkids_aos.MyPageSettingActivity
 import com.example.allforkids_aos.R
 import com.example.allforkids_aos.ResetBadgeActivity
@@ -28,7 +29,6 @@ class SettingFragment : Fragment() {
             val intent = Intent(requireActivity(), MyPageSettingActivity::class.java)
             startActivity(intent)
         }
-
         viewBinding.tvWithdrawal.setOnClickListener {
             val intent = Intent(requireActivity(), WithDrawalActivity::class.java)
             startActivity(intent)
@@ -39,6 +39,10 @@ class SettingFragment : Fragment() {
         }
         viewBinding.tvCustomerService.setOnClickListener {
             val intent = Intent(requireActivity(), SupportHelpActivity::class.java)
+            startActivity(intent)
+        }
+        viewBinding.tvNotice.setOnClickListener {
+            val intent = Intent(requireActivity(), AnnouncementActivity::class.java)
             startActivity(intent)
         }
         return viewBinding.root
