@@ -29,6 +29,7 @@ class SettingFragment : Fragment() {
             val intent = Intent(requireActivity(), MyPageSettingActivity::class.java)
             startActivity(intent)
         }
+
         viewBinding.tvWithdrawal.setOnClickListener {
             val intent = Intent(requireActivity(), WithDrawalActivity::class.java)
             startActivity(intent)
