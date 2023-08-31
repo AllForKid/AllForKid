@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:installLocation="preferExternal">
 
     <application
         android:allowBackup="true"
@@ -13,6 +14,27 @@
         android:theme="@style/Theme.AllForKids_AOS"
         tools:targetApi="31">
         <activity
+            android:name=".SupportHelpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResetBadgeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyPageBirthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyPageSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AnnouncementDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AnnouncementActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WithDrawalActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -21,6 +43,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

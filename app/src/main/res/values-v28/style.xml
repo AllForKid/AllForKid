@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="text_regular_char">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:lineHeight">24dp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textFontWeight">400</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="text_bold_char">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:lineHeight">20dp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textFontWeight">600</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="checkBoxTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorAccent">@color/titleBlue</item>
+        <item name="android:textColorSecondary">@color/titleBlue</item>
+        <item name="colorControlHighlight">@color/titleBlue</item>
+    </style>
+    <style name="tabTextTheme" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textFontWeight">400</item>
+        <item name="lineHeight">22dp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="CustomCardViewStyle" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay_card_custom_corners</item>
+    </style>
+    <style name="ShapeAppearanceOverlay_card_custom_corners" parent="">
+        <item name="strokeColor">@color/dark_grey</item>
+        <item name="strokeWidth">0.5dp</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeBottomRight">21dp</item>
+        <item name="cornerSizeBottomLeft">21dp</item>
+    </style>
+</resources>

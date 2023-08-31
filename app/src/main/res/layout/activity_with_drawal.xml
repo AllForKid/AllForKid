@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WithDrawalActivity">
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_white"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="86dp"
+        android:fontFamily="@font/roboto_bold"
+        android:lineHeight="28dp"
+        android:text="탈퇴하기 전에 아래 주의사항을\n꼭 확인해 주세요."
+        android:textColor="@color/black"
+        android:textFontWeight="600"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="3dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/icon_setting_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="20dp"
+                android:paddingHorizontal="10dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textFontWeight="400"
+                android:textSize="14sp"
+                android:lineHeight="20dp"
+                android:lineSpacingExtra="-10dp"
+                android:textColor="@color/black"
+                android:text="@string/withdrawal_precautions1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="3dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="9dp"
+
+                android:background="@drawable/icon_setting_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="20dp"
+                android:paddingHorizontal="10dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textFontWeight="400"
+                android:textSize="14sp"
+                android:lineHeight="20dp"
+                android:textColor="@color/black"
+                android:text="@string/withdrawal_precautions2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="3dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/icon_setting_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="20dp"
+                android:paddingHorizontal="10dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textFontWeight="400"
+                android:textSize="14sp"
+                android:lineHeight="20dp"
+                android:textColor="@color/black"
+                android:text="@string/withdrawal_precautions3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="3dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/icon_setting_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="20dp"
+                android:paddingHorizontal="10dp"
+                android:fontFamily="@font/roboto_bold"
+                android:textFontWeight="400"
+                android:textSize="14sp"
+                android:lineHeight="20dp"
+                android:textColor="@color/black"
+                android:text="@string/withdrawal_precautions4" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@drawable/style_setting_agree_border"
+        app:layout_constraintBottom_toTopOf="@+id/appCompatButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkBoxTheme"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:paddingVertical="24dp"
+            android:textSize="12sp"
+            android:lineHeight="20dp"
+            android:textFontWeight="400"
+            android:fontFamily="@font/roboto_bold"
+            android:text="상단 주의사항을 모두 확인했으며 탈퇴에 동의합니다."
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/appCompatButton" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:textColor="#6B6666"
+        android:fontFamily="@font/roboto_bold"
+        android:textFontWeight="600"
+        android:textSize="16sp"
+        android:lineHeight="20dp"
+        android:background="@drawable/selector_setting_withdrawal_btn"
+        android:textAlignment="center"
+        android:text="탈퇴하기"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
