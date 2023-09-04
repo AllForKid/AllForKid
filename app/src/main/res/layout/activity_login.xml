@@ -171,10 +171,10 @@
         android:id="@+id/cl_join"
         android:layout_width="175dp"
         android:layout_height="16dp"
-        android:layout_marginTop="680dp"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
             android:id="@+id/tv_join"
@@ -192,10 +192,9 @@
             android:background="#00000000"
             android:text="회원가입"
             android:textColor="#5071E7"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             android:textSize="12dp"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
