@@ -68,6 +68,7 @@
         android:layout_height="24dp"
         android:layout_marginEnd="8dp"
         android:src="@drawable/icon_signin_checked"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/iv_mail"
         app:layout_constraintEnd_toEndOf="@+id/iv_mail"
         app:layout_constraintTop_toTopOf="@+id/iv_mail" />
@@ -89,17 +90,19 @@
         android:layout_height="24dp"
         android:layout_marginEnd="8dp"
         android:src="@drawable/icon_signin_checked"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/iv_code"
         app:layout_constraintEnd_toEndOf="@+id/iv_code"
         app:layout_constraintTop_toTopOf="@+id/iv_code" />
 
     <TextView
-        android:id="@+id/tv_error2"
+        android:id="@+id/tv_code_error"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
         android:layout_marginTop="8dp"
         android:text="인증 코드가 올바르지 않습니다."
+        android:visibility="invisible"
         android:textColor="#F03E3E"
         android:textSize="11dp"
         app:layout_constraintStart_toStartOf="parent"

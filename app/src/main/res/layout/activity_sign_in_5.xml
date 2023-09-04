@@ -74,15 +74,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
     <ImageView
-        android:id="@+id/iv_pw_checked"
+        android:id="@+id/iv_pw_checked1"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginEnd="8dp"
         android:src="@drawable/icon_signin_checked"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/iv_mail"
         app:layout_constraintEnd_toEndOf="@+id/iv_mail"
         app:layout_constraintTop_toTopOf="@+id/iv_mail" />
+
+
 
     <TextView
         android:id="@+id/tv_pw_check"
@@ -107,15 +112,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
-        android:id="@+id/iv_pw_checked2"
+        android:id="@+id/iv_pw_checked"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginEnd="8dp"
         android:src="@drawable/icon_signin_checked"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/iv_code"
         app:layout_constraintEnd_toEndOf="@+id/iv_code"
         app:layout_constraintTop_toTopOf="@+id/iv_code" />
+
+
 
     <EditText
         android:id="@+id/et_pw"
@@ -152,41 +161,44 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/iv_error1"
+        android:id="@+id/iv_error2"
         android:layout_width="16dp"
         android:layout_height="16dp"
+        android:visibility="invisible"
         android:layout_marginEnd="4dp"
         android:src="@drawable/icon_signin_error"
-        app:layout_constraintBottom_toBottomOf="@id/tv_error1"
-        app:layout_constraintEnd_toStartOf="@+id/tv_error1"
-        app:layout_constraintTop_toTopOf="@+id/tv_error1" />
+        app:layout_constraintBottom_toBottomOf="@id/tv_error_pw_check"
+        app:layout_constraintEnd_toStartOf="@+id/tv_error_pw_check"
+        app:layout_constraintTop_toTopOf="@+id/tv_error_pw_check" />
 
 
     <TextView
-        android:id="@+id/tv_error1"
+        android:id="@+id/tv_error_pw_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="63dp"
         android:layout_marginTop="451dp"
         android:text="비밀번호가 일치하지 않습니다."
+        android:visibility="invisible"
         android:textColor="#F03E3E"
         android:textSize="11dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/iv_error2"
+        android:id="@+id/iv_error1"
         android:layout_width="16dp"
         android:layout_height="16dp"
         android:layout_marginEnd="4dp"
         android:src="@drawable/icon_signin_error"
-        app:layout_constraintBottom_toBottomOf="@id/tv_error2"
-        app:layout_constraintEnd_toStartOf="@+id/tv_error2"
-        app:layout_constraintTop_toTopOf="@+id/tv_error2" />
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/tv_error_pw"
+        app:layout_constraintEnd_toStartOf="@+id/tv_error_pw"
+        app:layout_constraintTop_toTopOf="@+id/tv_error_pw" />
 
 
     <TextView
-        android:id="@+id/tv_error2"
+        android:id="@+id/tv_error_pw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="63dp"
@@ -194,6 +206,7 @@
         android:text="비밀번호는 8자 이상이어야 합니다."
         android:textColor="#F03E3E"
         android:textSize="11dp"
+        android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

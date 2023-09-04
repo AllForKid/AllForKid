@@ -55,50 +55,203 @@
         android:id="@+id/tv_age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="가장 어린 자녀의 나이"
         android:layout_marginStart="32dp"
         android:layout_marginTop="257dp"
+        android:textSize="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_age_1"
-        android:layout_width="72dp"
-        android:layout_height="38dp"
+        android:layout_width="76dp"
+        android:layout_height="42dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="257dp"
+        android:layout_marginTop="8dp"
+        android:text="만3세미만"
+        android:textSize="12dp"
+        android:textColor="#000000"
+        android:padding="0dp"
+        android:textStyle="bold"
         android:backgroundTint="#F7F49D"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_age" />
 
     <Button
         android:id="@+id/btn_age_2"
-        android:layout_width="72dp"
-        android:layout_height="38dp"
+        android:layout_width="76dp"
+        android:layout_height="42dp"
         android:layout_marginStart="16dp"
         android:backgroundTint="#F7F49D"
+        android:text="어린이"
+        android:textSize="12dp"
+        android:textColor="#000000"
+        android:padding="0dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/btn_age_1"
         app:layout_constraintStart_toEndOf="@+id/btn_age_1"
         app:layout_constraintTop_toTopOf="@+id/btn_age_1" />
 
     <Button
         android:id="@+id/btn_age_3"
-        android:layout_width="72dp"
-        android:layout_height="38dp"
+        android:layout_width="76dp"
+        android:layout_height="42dp"
         android:layout_marginStart="16dp"
         android:backgroundTint="#F7F49D"
+        android:text="유치원"
+        android:textSize="12dp"
+        android:textColor="#000000"
+        android:padding="0dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/btn_age_2"
         app:layout_constraintStart_toEndOf="@+id/btn_age_2"
         app:layout_constraintTop_toTopOf="@+id/btn_age_2" />
 
     <Button
         android:id="@+id/btn_age_4"
-        android:layout_width="72dp"
-        android:layout_height="38dp"
+        android:layout_width="76dp"
+        android:layout_height="42dp"
         android:layout_marginStart="16dp"
         android:backgroundTint="#F7F49D"
+        android:text="초등학생"
+        android:textSize="12dp"
+        android:textColor="#000000"
+        android:padding="0dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/btn_age_3"
         app:layout_constraintStart_toEndOf="@+id/btn_age_3"
         app:layout_constraintTop_toTopOf="@+id/btn_age_3" />
+
+    <TextView
+        android:id="@+id/tv_interest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="369dp"
+        android:text="관심 항목 (최대 3개까지 선택 가능)"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_interest_1"
+        android:layout_width="76dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#A2FDF2"
+        android:text="카페"
+        android:textSize="12dp"
+        android:textColor="#000000"
+        android:padding="0dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_interest" />
+
+    <Button
+        android:id="@+id/btn_interest_2"
+        android:layout_width="76dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#A2FDF2"
+        android:text="과학"
+        android:textSize="12dp"
+        android:textColor="#000000"
+        android:padding="0dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_interest_1"
+        app:layout_constraintStart_toEndOf="@+id/btn_interest_1"
+        app:layout_constraintTop_toTopOf="@+id/btn_interest_1" />
+
+    <Button
+        android:id="@+id/btn_interest_3"
+        android:layout_width="76dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#A2FDF2"
+        android:text="박물관"
+        android:textSize="12dp"
+        android:textColor="#000000"
+        android:padding="0dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_interest_2"
+        app:layout_constraintStart_toEndOf="@+id/btn_age_2"
+        app:layout_constraintTop_toTopOf="@+id/btn_interest_2" />
+
+    <Button
+        android:id="@+id/btn_interest_4"
+        android:layout_width="76dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#A2FDF2"
+        android:padding="0dp"
+        android:text="식물원"
+        android:textColor="#000000"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_interest_3"
+        app:layout_constraintStart_toEndOf="@+id/btn_age_3"
+        app:layout_constraintTop_toTopOf="@+id/btn_interest_3" />
+
+    <Button
+        android:id="@+id/btn_interest_5"
+        android:layout_width="76dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#A2FDF2"
+        android:text="수족관"
+        android:textSize="12dp"
+        android:textColor="#000000"
+        android:padding="0dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_interest_1" />
+
+    <Button
+        android:id="@+id/btn_interest_6"
+        android:layout_width="76dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#A2FDF2"
+        android:text="동물원"
+        android:textSize="12dp"
+        android:textColor="#000000"
+        android:padding="0dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_interest_5"
+        app:layout_constraintStart_toEndOf="@+id/btn_interest_1"
+        app:layout_constraintTop_toTopOf="@+id/btn_interest_5" />
+
+    <Button
+        android:id="@+id/btn_interest_7"
+        android:layout_width="76dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#A2FDF2"
+        android:text="놀이공원"
+        android:textSize="12dp"
+        android:textColor="#000000"
+        android:padding="0dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_interest_6"
+        app:layout_constraintStart_toEndOf="@+id/btn_age_2"
+        app:layout_constraintTop_toTopOf="@+id/btn_interest_6" />
+
+    <Button
+        android:id="@+id/btn_interest_8"
+        android:layout_width="76dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#A2FDF2"
+        android:text="스포츠"
+        android:textSize="12dp"
+        android:textColor="#000000"
+        android:padding="0dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_interest_7"
+        app:layout_constraintStart_toEndOf="@+id/btn_age_3"
+        app:layout_constraintTop_toTopOf="@+id/btn_interest_7" />
 
 
 
@@ -125,8 +278,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="182dp"
-        android:text="관심 항목을 선택해주세요"
+        android:layout_marginTop="164dp"
+        android:text="(선택)\n관심 항목을 선택해주세요"
         android:textSize="24dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"

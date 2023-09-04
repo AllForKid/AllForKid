@@ -62,12 +62,13 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-        android:id="@+id/tv_error2"
+        android:id="@+id/tv_error"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
         android:layout_marginTop="326dp"
         android:text="올바른 이메일 형식이 아닙니다."
+        android:visibility="invisible"
         android:textColor="#F03E3E"
         android:textSize="11dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,7 +82,8 @@
         android:src="@drawable/icon_signin_checked"
         app:layout_constraintBottom_toBottomOf="@+id/iv_mail"
         app:layout_constraintEnd_toEndOf="@+id/iv_mail"
-        app:layout_constraintTop_toTopOf="@+id/iv_mail" />
+        app:layout_constraintTop_toTopOf="@+id/iv_mail"
+        android:visibility="invisible"/>
 
     <EditText
         android:id="@+id/et_mail"

@@ -61,7 +61,7 @@
         android:layout_marginBottom="38dp"
         android:background="@drawable/login_btn_background"
         android:backgroundTint="#0064FF"
-        android:text="다음 단계"
+        android:text="동의"
         android:textColor="@color/white"
         android:textSize="16dp"
         android:textStyle="bold"
