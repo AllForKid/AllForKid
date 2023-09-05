@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
+import com.example.allforkids_aos.R
 import com.example.allforkids_aos.ToggleAnimation
 import com.example.allforkids_aos.databinding.ItemHelpBinding
 import com.example.allforkids_aos.model.Help
@@ -51,9 +52,15 @@ class HelpAdapter(private val helpList: List<Help>) : RecyclerView.Adapter<HelpA
 //                        rotation(180f)
 //                    }
 //                }
-            }
+                if (show) {
+                    itemBinding.layout.setBackgroundResource(R.drawable.style_help_border_top_change)
+                } else {
+                    itemBinding.layout.setBackgroundResource(R.drawable.style_help_border_top)
+                }
 
             }
+
+        }
 
         private fun toggleLayout(isExpanded: Boolean, view: View, layoutExpand: ConstraintLayout): Boolean {
             // 2

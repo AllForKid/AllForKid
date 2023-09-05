@@ -23,7 +23,7 @@
         app:tabIndicator="@color/titleBlue"
         app:tabIndicatorHeight="3dp"
         app:tabGravity="fill"
-        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorFullWidth="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
