@@ -10,7 +10,7 @@
 
     <include
         android:id="@+id/actionbar"
-        layout="@layout/actionbar_blue"/>
+        layout="@layout/actionbar_settings"/>
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/scroll_view"

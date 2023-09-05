@@ -8,7 +8,7 @@
 
     <include
         android:id="@+id/actionbar"
-        layout="@layout/actionbar_white"
+        layout="@layout/actionbar_settings"
         />
 
     <com.google.android.material.tabs.TabLayout

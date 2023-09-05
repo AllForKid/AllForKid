@@ -9,7 +9,7 @@
 
     <include
         android:id="@+id/actionbar"
-        layout="@layout/actionbar_blue"/>
+        layout="@layout/actionbar_settings"/>
 
     <TextView
         android:id="@+id/textView4"

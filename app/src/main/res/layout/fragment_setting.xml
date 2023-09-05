@@ -7,22 +7,9 @@
     tools:context=".MainActivity"
     android:background="@color/white">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayout"
-        android:layout_width="match_parent"
-        android:layout_height="58dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/titleBlue">
-
-        <androidx.appcompat.widget.Toolbar
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            app:logo="@drawable/logo_title"
-            app:contentInsetStart="21dp" />
-    </com.google.android.material.appbar.AppBarLayout>
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_settings"/>
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/scroll_view"
@@ -149,12 +136,15 @@
                 app:layout_constraintStart_toEndOf="@+id/btn_child"
                 app:layout_constraintTop_toBottomOf="@+id/tv_additional_info" />
 
-            <LinearLayout
+            <GridLayout
                 android:id="@+id/linearLayout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_marginTop="161dp"
+                android:columnCount="2"
                 android:orientation="vertical"
+                android:rowCount="3"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -178,9 +168,9 @@
                         android:fontFamily="@font/roboto_bold"
                         android:gravity="center"
                         android:lineHeight="22dp"
-                        android:text="알림"
                         android:paddingHorizontal="26dp"
                         android:paddingVertical="14dp"
+                        android:text="알림"
                         android:textColor="@color/black"
                         android:textFontWeight="400"
                         android:textSize="14dp" />
@@ -188,13 +178,27 @@
                     <androidx.appcompat.widget.SwitchCompat
                         android:layout_width="45dp"
                         android:layout_height="24dp"
-                        app:switchMinWidth="24dp"
                         android:layout_marginLeft="218dp"
-                        android:layout_marginRight="21dp" />
+                        android:layout_marginRight="21dp"
+                        app:switchMinWidth="24dp" />
 
                 </LinearLayout>
 
-            </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_account_interwork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:lineHeight="22dp"
+                    android:paddingHorizontal="26dp"
+                    android:paddingVertical="14dp"
+                    android:text="계정 연동"
+                    android:textColor="@color/black"
+                    android:textFontWeight="400"
+                    android:textSize="14dp" />
+
+
+            </GridLayout>
 
             <View
                 android:id="@+id/view"
@@ -227,6 +231,7 @@
                     android:textSize="14dp" />
 
                 <TextView
+                    android:id="@+id/tv_jjim_travel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_bold"
@@ -368,7 +373,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="304dp"
+                        android:layout_marginRight="16dp"
                         android:fontFamily="@font/roboto"
                         android:lineHeight="22px"
                         android:text="2.07.9"
@@ -378,7 +383,6 @@
                         android:textSize="14dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="@+id/textView2"
                         app:layout_constraintTop_toTopOf="@+id/textView2" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 

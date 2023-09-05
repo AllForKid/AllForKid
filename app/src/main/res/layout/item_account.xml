@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.gridlayout.widget.GridLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_bold"
+            android:lineHeight="22dp"
+            android:text="1."
+            android:textColor="@color/black"
+            android:textFontWeight="600"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:lineHeight="22dp"
+            android:text="묘묭"
+            android:textColor="@color/black"
+            android:textFontWeight="600"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/roboto"
+            android:lineHeight="22dp"
+            android:text="bbbbbb"
+            android:textColor="@color/black"
+            android:textFontWeight="400"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_link_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:fontFamily="@font/roboto"
+            android:lineHeight="22dp"
+            android:text="2023.08.27"
+            android:textColor="@color/black"
+            android:textFontWeight="400"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_unlink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:fontFamily="@font/noto_sans_bold"
+            android:lineHeight="20dp"
+            android:text="연동 해제"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </androidx.gridlayout.widget.GridLayout>

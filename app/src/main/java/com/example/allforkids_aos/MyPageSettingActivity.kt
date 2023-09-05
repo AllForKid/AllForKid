@@ -22,12 +22,13 @@ class MyPageSettingActivity : AppCompatActivity() {
         setContentView(viewBinding.root)
 
         viewBinding.actionbar.appbarSave.visibility = View.VISIBLE
+        viewBinding.actionbar.appbarChangeMyInfo.visibility = View.VISIBLE
         viewBinding.imgMyPageProfile.clipToOutline = true
         viewBinding.tvChangeBirth.setOnClickListener {
             val intent = Intent(this, MyPageBirthActivity::class.java)
             startActivity(intent)
         }
-        validateNickname()
+//        validateNickname()
     }
 
     override fun onResume() {
