@@ -27,9 +27,11 @@
                 android:id="@+id/view_my_page_profile"
                 android:layout_width="332dp"
                 android:layout_height="115dp"
-                android:layout_marginLeft="15dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="26dp"
+                android:layout_marginEnd="16dp"
                 android:background="@drawable/style_setting_my_page_border"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -158,8 +160,8 @@
                     android:textFontWeight="600"
                     android:textSize="14dp" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <TextView
@@ -173,16 +175,20 @@
                         android:text="알림"
                         android:textColor="@color/black"
                         android:textFontWeight="400"
-                        android:textSize="14dp" />
+                        android:textSize="14dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:layout_width="45dp"
                         android:layout_height="24dp"
-                        android:layout_marginLeft="218dp"
-                        android:layout_marginRight="21dp"
+                        android:layout_marginEnd="28dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
                         app:switchMinWidth="24dp" />
 
-                </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <TextView
                     android:id="@+id/tv_account_interwork"
