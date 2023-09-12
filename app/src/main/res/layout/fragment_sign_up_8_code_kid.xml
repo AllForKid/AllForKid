@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/tv_sign_in"
+            android:id="@+id/tv_sign_up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="48dp"
@@ -33,11 +33,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginTop="2dp"
-            android:background="#0000000"
+            android:background="#00000000"
             android:src="@drawable/icon_arrow_back"
-            app:layout_constraintBottom_toBottomOf="@+id/tv_sign_in"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_sign_up"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/tv_sign_in" />
+            app:layout_constraintTop_toTopOf="@+id/tv_sign_up" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -55,7 +55,7 @@
         android:id="@+id/tv_age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="부모 계정과 연동하기"
+        android:text="아이 계정과 연동하기"
         android:layout_marginStart="32dp"
         android:layout_marginTop="257dp"
         android:textSize="16dp"
@@ -101,7 +101,7 @@
 
 
     <android.widget.Button
-        android:id="@+id/btn_next"
+        android:id="@+id/btn_login"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="48dp"
