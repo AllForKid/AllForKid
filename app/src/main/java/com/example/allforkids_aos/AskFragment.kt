@@ -1,59 +1,71 @@
 package com.example.allforkids_aos
 
+import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
+import androidx.core.content.ContextCompat
+import com.example.allforkids_aos.databinding.AskDialogBinding
+import com.example.allforkids_aos.databinding.FragmentAskBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [AskFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class AskFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    private lateinit var viewBinding: FragmentAskBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_ask, container, false)
+        viewBinding = FragmentAskBinding.inflate(layoutInflater)
+
+        viewBinding.checkBox.isChecked = false
+        viewBinding.appCompatButton.isEnabled = false
+
+        viewBinding.checkBox.setOnCheckedChangeListener { _, isChecked ->
+            viewBinding.appCompatButton.isEnabled = isChecked
+        }
+        viewBinding.appCompatButton.setOnClickListener {
+            // 클릭 형태 유지
+            viewBinding.appCompatButton.isSelected = !viewBinding.appCompatButton.isSelected
+
+            // textView 색상 변화
+            if (viewBinding.appCompatButton.isSelected) {
+                viewBinding.appCompatButton.setTextColor(resources.getColorStateList(R.color.white))
+            } else {
+                viewBinding.appCompatButton.setTextColor(Color.parseColor("#6B6666"))
+            }
+
+            showDialog()
+        }
+        return viewBinding.root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment AskFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            AskFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    private fun showDialog(){
+        val dialogViewBinding = AskDialogBinding.inflate(layoutInflater)
+        val dialog= androidx.appcompat.app.AlertDialog.Builder(requireContext()).create()
+        dialog.setView(dialogViewBinding.root)
+
+        // dialog 배경 투명 처리
+        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+        // 다이얼로그 크기 설정
+        dialog.window?.setLayout(
+            WindowManager.LayoutParams.WRAP_CONTENT,
+            WindowManager.LayoutParams.WRAP_CONTENT)
+        dialog.setCanceledOnTouchOutside(false)    // 다이얼로그 영역 밖 클릭 시, 다이얼 로그 삭제 금지
+        dialog.setCancelable(false)                 // 취소가 가능하도록 하는 코드
+
+        dialog.show()
+
+        dialogViewBinding.button.setOnClickListener {
+            dialog.dismiss()
+            viewBinding.appCompatButton.isSelected = false
+        }
     }
+
+
 }

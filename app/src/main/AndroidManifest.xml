@@ -25,6 +25,11 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".JjimTravelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AccountInterworkActivity"
+        <activity
             android:name=".CommunityReviewPostActivity"
             android:exported="false" />
         <activity

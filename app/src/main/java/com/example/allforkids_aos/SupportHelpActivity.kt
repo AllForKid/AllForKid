@@ -13,6 +13,7 @@ class SupportHelpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         viewBinding = ActivitySupportHelpBinding.inflate(layoutInflater)
         setContentView(viewBinding.root)
+
         viewBinding.actionbar.appbarCustomerService.visibility = View.VISIBLE
         val supportAdapter = SupportAdapter(this)
         viewBinding.vp2.adapter = supportAdapter

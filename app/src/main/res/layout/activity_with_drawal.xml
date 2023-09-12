@@ -8,7 +8,7 @@
 
     <include
         android:id="@+id/actionbar"
-        layout="@layout/actionbar_white"/>
+        layout="@layout/actionbar_settings"/>
 
     <TextView
         android:id="@+id/textView"
@@ -16,8 +16,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="86dp"
+        android:textStyle="bold"
         android:fontFamily="@font/roboto_bold"
-        android:lineHeight="28dp"
+        android:lineSpacingExtra="-1dp"
         android:text="탈퇴하기 전에 아래 주의사항을\n꼭 확인해 주세요."
         android:textColor="@color/black"
         android:textFontWeight="600"
@@ -27,7 +28,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="360dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:orientation="vertical"
@@ -150,8 +151,8 @@
 
         <androidx.appcompat.widget.AppCompatCheckBox
             android:id="@+id/checkBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:theme="@style/checkBoxTheme"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="20dp"/>

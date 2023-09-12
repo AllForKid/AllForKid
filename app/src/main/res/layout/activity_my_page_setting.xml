@@ -10,7 +10,7 @@
 
     <include
         android:id="@+id/actionbar"
-        layout="@layout/actionbar_blue"/>
+        layout="@layout/actionbar_settings"/>
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/scroll_view"
@@ -161,12 +161,13 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/view">
 
-                <LinearLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:orientation="horizontal"
                     android:paddingVertical="10dp">
 
                     <TextView
+                        android:id="@+id/textView22"
                         android:layout_width="52dp"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto_bold"
@@ -174,7 +175,9 @@
                         android:text="생년월일"
                         android:textColor="@color/black"
                         android:textFontWeight="600"
-                        android:textSize="14dp" />
+                        android:textSize="14dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
                         android:id="@+id/tv_birth"
@@ -186,26 +189,31 @@
                         android:text="2000-01-01"
                         android:textColor="@color/black"
                         android:textFontWeight="400"
-                        android:textSize="14dp" />
+                        android:textSize="14dp"
+                        app:layout_constraintStart_toEndOf="@+id/textView22"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
                         android:id="@+id/tv_change_birth"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="18dp"
                         android:fontFamily="@font/roboto"
                         android:lineHeight="22dp"
                         android:text="변경"
                         android:textColor="@color/titleBlue"
                         android:textFontWeight="400"
-                        android:textSize="14dp" />
-                </LinearLayout>
+                        android:textSize="14dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <LinearLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:paddingVertical="10dp">
 
                     <TextView
+                        android:id="@+id/textView25"
                         android:layout_width="52dp"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto_bold"
@@ -213,10 +221,13 @@
                         android:text="전화번호"
                         android:textColor="@color/black"
                         android:textFontWeight="600"
-                        android:textSize="14dp" />
+                        android:textSize="14dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
 
                     <TextView
+                        android:id="@+id/textView23"
                         android:layout_width="216dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="18dp"
@@ -225,26 +236,32 @@
                         android:text="010-0000-0000"
                         android:textColor="@color/black"
                         android:textFontWeight="400"
-                        android:textSize="14dp" />
+                        android:textSize="14dp"
+                        app:layout_constraintStart_toEndOf="@+id/textView25"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
+                        android:id="@+id/textView24"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="18dp"
                         android:fontFamily="@font/roboto"
                         android:lineHeight="22dp"
                         android:text="변경"
                         android:textColor="@color/titleBlue"
                         android:textFontWeight="400"
-                        android:textSize="14dp" />
+                        android:textSize="14dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-                </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <LinearLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:paddingVertical="10dp">
 
                     <TextView
+                        android:id="@+id/textView27"
                         android:layout_width="52dp"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto_bold"
@@ -252,9 +269,12 @@
                         android:text="이메일"
                         android:textColor="@color/black"
                         android:textFontWeight="600"
-                        android:textSize="14dp" />
+                        android:textSize="14dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
+                        android:id="@+id/textView26"
                         android:layout_width="216dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="18dp"
@@ -263,19 +283,23 @@
                         android:text="abc1234@naver.com"
                         android:textColor="@color/black"
                         android:textFontWeight="400"
-                        android:textSize="14dp" />
+                        android:textSize="14dp"
+                        app:layout_constraintStart_toEndOf="@+id/textView27"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="18dp"
                         android:fontFamily="@font/roboto"
                         android:lineHeight="22dp"
                         android:text="변경"
                         android:textColor="@color/titleBlue"
                         android:textFontWeight="400"
-                        android:textSize="14dp" />
-                </LinearLayout>
+                        android:textSize="14dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
             </GridLayout>
 
             <View
@@ -321,12 +345,13 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/view3">
 
-                <LinearLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:orientation="horizontal"
                     android:paddingVertical="10dp">
 
                     <TextView
+                        android:id="@+id/textView21"
                         android:layout_width="52dp"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto_bold"
@@ -334,9 +359,13 @@
                         android:text="주소"
                         android:textColor="@color/black"
                         android:textFontWeight="600"
-                        android:textSize="14dp" />
+                        android:textSize="14dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
+                        android:id="@+id/textView19"
                         android:layout_width="216dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="18dp"
@@ -345,19 +374,26 @@
                         android:text="덕성여자대학교"
                         android:textColor="@color/black"
                         android:textFontWeight="400"
-                        android:textSize="14dp" />
+                        android:textSize="14dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView21"
+                        app:layout_constraintTop_toTopOf="parent" />" />
 
                     <TextView
+                        android:id="@+id/textView20"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="18dp"
                         android:fontFamily="@font/roboto"
                         android:lineHeight="22dp"
                         android:text="변경"
                         android:textColor="@color/titleBlue"
                         android:textFontWeight="400"
-                        android:textSize="14dp" />
-                </LinearLayout>
+                        android:textSize="14dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
