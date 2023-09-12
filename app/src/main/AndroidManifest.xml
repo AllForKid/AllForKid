@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:installLocation="preferExternal"
+    package="com.example.allforkids_aos">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--갤러리 접근 허용-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -11,6 +22,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AllForKids_AOS"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
             android:name=".landing.SplashActivity"
@@ -23,6 +35,44 @@
         </activity>
 
         <activity
+            android:name=".JjimTravelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AccountInterworkActivity"
+        <activity
+            android:name=".CommunityReviewPostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CommunityMypageListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CommunityMypageDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CommunityReviewDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SupportHelpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResetBadgeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyPageBirthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyPageSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AnnouncementDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AnnouncementActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WithDrawalActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -33,11 +83,18 @@
         </activity>
 
         <activity android:name=".landing.LoginActivity">
-            <!-- 이곳에 필요한 인텐트 필터 및 설정을 추가할 수 있습니다. -->
+            <!-- 필요한 인텐트 필터 및 설정 추가 -->
         </activity>
         <activity android:name=".landing.SignUpActivity">
             <!-- 다른 설정들 -->
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="985ca839030dd3734caeb420a3212cb2" />
 
     </application>
 

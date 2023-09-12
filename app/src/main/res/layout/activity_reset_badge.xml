@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="16dp"
+    tools:context=".ResetBadgeActivity">
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_settings"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="36dp"
+        android:layout_marginTop="103dp"
+        android:fontFamily="@font/roboto"
+        android:lineHeight="18.75dp"
+        android:text="가장 어린 자녀의 나이"
+        android:textColor="#6b6666"
+        android:textSize="16sp"
+        android:textFontWeight="500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button1"
+            android:layout_width="66dp"
+            android:layout_height="31dp"
+            android:layout_margin="4dp"
+            android:paddingTop="2dp"
+            android:background="@drawable/style_rest_badge_btn_yellow"
+            android:fontFamily="@font/noto_sans_bold"
+            android:lineHeight="20dp"
+            android:text="만3세미만"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button2"
+            android:layout_width="66dp"
+            android:layout_height="31dp"
+            android:layout_margin="4dp"
+            android:paddingTop="2dp"
+            android:background="@drawable/style_rest_badge_btn_yellow"
+            android:fontFamily="@font/noto_sans_bold"
+            android:lineHeight="20dp"
+            android:text="어린이"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button3"
+            android:layout_width="66dp"
+            android:layout_height="31dp"
+            android:layout_margin="4dp"
+            android:paddingTop="2dp"
+            android:background="@drawable/style_rest_badge_btn_yellow"
+            android:fontFamily="@font/noto_sans_bold"
+            android:lineHeight="20dp"
+            android:text="유치원생"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button4"
+            android:layout_width="66dp"
+            android:layout_height="31dp"
+            android:layout_margin="4dp"
+            android:paddingTop="2dp"
+            android:background="@drawable/style_rest_badge_btn_yellow"
+            android:fontFamily="@font/noto_sans_bold"
+            android:lineHeight="20dp"
+            android:text="초등학생"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="12sp" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="36dp"
+        android:layout_marginTop="83dp"
+        android:fontFamily="@font/roboto"
+        android:lineHeight="18.75dp"
+        android:text="관심 항목 (최대 3개까지 선택 가능)"
+        android:textColor="#6b6666"
+        android:textFontWeight="500"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:columnCount="4"
+        android:rowCount="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button5"
+            android:layout_width="66dp"
+            android:layout_height="31dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/style_rest_badge_btn_mint"
+            android:fontFamily="@font/noto_sans_bold"
+            android:lineHeight="20dp"
+            android:text="카페"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button6"
+            android:layout_width="66dp"
+            android:layout_height="31dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/style_rest_badge_btn_mint"
+            android:fontFamily="@font/noto_sans_bold"
+            android:lineHeight="20dp"
+            android:text="과학놀이"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button7"
+            android:layout_width="66dp"
+            android:layout_height="31dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/style_rest_badge_btn_mint"
+            android:fontFamily="@font/noto_sans_bold"
+            android:lineHeight="20dp"
+            android:text="박물관"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button8"
+            android:layout_width="66dp"
+            android:layout_height="31dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/style_rest_badge_btn_mint"
+            android:fontFamily="@font/noto_sans_bold"
+            android:lineHeight="20dp"
+            android:text="식물원"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button9"
+            android:layout_width="66dp"
+            android:layout_height="31dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/style_rest_badge_btn_mint"
+            android:fontFamily="@font/noto_sans_bold"
+            android:lineHeight="20dp"
+            android:text="아쿠아리움"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button10"
+            android:layout_width="66dp"
+            android:layout_height="31dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/style_rest_badge_btn_mint"
+            android:fontFamily="@font/noto_sans_bold"
+            android:lineHeight="20dp"
+            android:text="동물원"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button11"
+            android:layout_width="66dp"
+            android:layout_height="31dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/style_rest_badge_btn_mint"
+            android:fontFamily="@font/noto_sans_bold"
+            android:lineHeight="20dp"
+            android:text="놀이공원"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button12"
+            android:layout_width="66dp"
+            android:layout_height="31dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/style_rest_badge_btn_mint"
+            android:fontFamily="@font/noto_sans_bold"
+            android:lineHeight="20dp"
+            android:text="스포츠"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="12sp" />
+
+    </GridLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton2"
+        android:layout_width="327dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/style_settings_birth_btn"
+        android:fontFamily="@font/roboto_bold"
+        android:lineHeight="18.75dp"
+        android:text="저장"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textFontWeight="600"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

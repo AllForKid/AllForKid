@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPageBirthActivity">
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_settings"/>
+
+    <TextView
+        android:id="@+id/tv_date"
+        style="@style/text_regular_char"
+        android:layout_width="326.88dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="194dp"
+        android:background="@drawable/style_settings_birth_border"
+        android:paddingVertical="12dp"
+        android:paddingStart="14dp"
+        android:text="2018-08-29"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_calendar"
+        android:layout_width="20.22dp"
+        android:layout_height="21.55dp"
+        android:layout_marginEnd="22.66dp"
+        android:background="@drawable/icon_settings_calendar"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_date"
+        app:layout_constraintEnd_toEndOf="@+id/tv_date"
+        app:layout_constraintTop_toTopOf="@+id/tv_date" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="328dp"
+            android:background="@drawable/style_settings_bottom_sheet"
+            app:behavior_hideable="true"
+            app:behavior_peekHeight="0dp"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@drawable/style_bottom_sheet_birth"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textColor="@color/black"
+                    android:lineHeight="23.44dp"
+                    android:textSize="20sp"
+                    android:textFontWeight="600"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="생일"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/img_x"
+                    android:layout_width="15.32dp"
+                    android:layout_height="14.78dp"
+                    android:layout_marginEnd="13.52dp"
+                    android:background="@drawable/icon_bottom_sheet_x"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="327dp"
+                android:layout_height="189dp"
+                android:layout_marginTop="1dp"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton2"
+                android:layout_width="327dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/style_settings_birth_btn"
+                android:fontFamily="@font/roboto_bold"
+                android:lineHeight="18.75dp"
+                android:text="저장"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textFontWeight="600"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/datePicker" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
