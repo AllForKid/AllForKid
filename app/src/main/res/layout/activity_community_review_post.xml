@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="69dp"
-        android:src="@drawable/img_arrow_back" />
+        android:src="@drawable/icon_arrow_back" />
 
     <TextView
         android:layout_width="80dp"
