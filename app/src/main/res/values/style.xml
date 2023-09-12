@@ -22,4 +22,9 @@
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
     </style>
+
+    <style name="TransparentBottomSheetDialogTheme" parent="Theme.AppCompat.Light">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+    </style>
 </resources>
