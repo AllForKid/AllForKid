@@ -25,6 +25,16 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".landing.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".JjimTravelActivity"
             android:exported="false" />
         <activity
@@ -72,12 +82,20 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".landing.LoginActivity">
+            <!-- 필요한 인텐트 필터 및 설정 추가 -->
+        </activity>
+        <activity android:name=".landing.SignUpActivity">
+            <!-- 다른 설정들 -->
+        </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
         <meta-data
             android:name="com.kakao.sdk.AppKey"
             android:value="985ca839030dd3734caeb420a3212cb2" />
+
     </application>
 
 </manifest>
