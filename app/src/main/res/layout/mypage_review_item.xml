@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="106dp"
+    android:layout_height="104dp"
+    android:background="@drawable/style_community_img_border"
+    android:layout_marginBottom="14px">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/main_recommend_yeosu"
+        android:background="@drawable/style_community_img_border"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

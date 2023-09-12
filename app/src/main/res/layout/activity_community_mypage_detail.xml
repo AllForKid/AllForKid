@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommunityMypageDetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/titleBlue">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+
+            app:logo="@drawable/logo_title"
+            app:contentInsetStart="21dp" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="70dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="11dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="리뷰"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/review_underline"
+                android:layout_width="150dp"
+                android:layout_height="2dp"
+                android:background="#D9D9D9" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="마이페이지"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="2dp"
+                android:background="#0064FF" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mypage_detail_date"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="YYYY.MM.DD"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="119dp"
+        android:layout_marginLeft="16dp"/>
+
+    <ImageView
+        android:id="@+id/mypage_detail_lock"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="119dp"
+        android:layout_marginLeft="110dp"
+        android:src="@drawable/img_open_lock"/>
+
+    <ImageView
+        android:id="@+id/mypage_detail_menu"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="119dp"
+        android:layout_marginLeft="326dp"
+        android:src="@drawable/img_menu"/>
+
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="153dp"
+        android:layout_marginLeft="246dp"
+        android:src="@drawable/img_gps"/>
+
+    <TextView
+        android:id="@+id/mypage_detail_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="위치 정보"
+        android:textColor="#797979"
+        android:textSize="12sp"
+        android:layout_marginTop="152dp"
+        android:layout_marginLeft="266dp"/>
+
+    <ImageView
+        android:id="@+id/mypage_detail_star"
+        android:layout_width="131dp"
+        android:layout_height="20.59dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="148dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/img_star_point"/>
+
+
+
+    <ImageView
+        android:id="@+id/mypage_detail_img"
+        android:layout_width="332dp"
+        android:layout_height="301dp"
+        android:layout_marginTop="179dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/style_community_img_border"/>
+
+    <FrameLayout
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="504dp"
+        android:background="@drawable/style_review_box_background">
+
+        <TextView
+            android:id="@+id/mypage_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="14dp"
+            android:text="리뷰 제목"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="41dp"
+            android:background="#C5C3C3" />
+
+        <TextView
+            android:id="@+id/mypage_detail_content"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="리뷰 내용입니다."
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginBottom="14dp"/>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

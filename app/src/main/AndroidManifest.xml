@@ -9,6 +9,9 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
+    <!--갤러리 접근 허용-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:networkSecurityConfig="@xml/network_security_config"
@@ -26,6 +29,17 @@
             android:exported="false" />
         <activity
             android:name=".AccountInterworkActivity"
+        <activity
+            android:name=".CommunityReviewPostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CommunityMypageListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CommunityMypageDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CommunityReviewDetailActivity"
             android:exported="false" />
         <activity
             android:name=".SupportHelpActivity"
