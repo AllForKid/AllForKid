@@ -38,7 +38,7 @@
             android:name=".JjimTravelActivity"
             android:exported="false" />
         <activity
-            android:name=".AccountInterworkActivity"
+            android:name=".AccountInterworkActivity" />
         <activity
             android:name=".CommunityReviewPostActivity"
             android:exported="false" />
