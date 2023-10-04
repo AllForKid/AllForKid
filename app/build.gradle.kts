@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.allforkids_aos"
+    namespace = "com.afk.allforkids_aos"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.allforkids_aos"
+        applicationId = "com.afk.allforkids_aos"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
