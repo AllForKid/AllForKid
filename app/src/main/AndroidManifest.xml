@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:installLocation="preferExternal"
-    package="com.example.allforkids_aos">
+    package="com.afk.allforkids_aos">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -25,7 +25,7 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".landing.SplashActivity"
+            android:name="com.afk.allforkids_aos.landing.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,45 +35,45 @@
         </activity>
 
         <activity
-            android:name=".JjimTravelActivity"
+            android:name="com.afk.allforkids_aos.JjimTravelActivity"
             android:exported="false" />
         <activity
-            android:name=".AccountInterworkActivity"/>
+            android:name="com.afk.allforkids_aos.AccountInterworkActivity"/>
         <activity
-            android:name=".CommunityReviewPostActivity"
+            android:name="com.afk.allforkids_aos.CommunityReviewPostActivity"
             android:exported="false" />
         <activity
-            android:name=".CommunityMypageListActivity"
+            android:name="com.afk.allforkids_aos.CommunityMypageListActivity"
             android:exported="false" />
         <activity
-            android:name=".CommunityMypageDetailActivity"
+            android:name="com.afk.allforkids_aos.CommunityMypageDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".CommunityReviewDetailActivity"
+            android:name="com.afk.allforkids_aos.CommunityReviewDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".SupportHelpActivity"
+            android:name="com.afk.allforkids_aos.SupportHelpActivity"
             android:exported="false" />
         <activity
-            android:name=".ResetBadgeActivity"
+            android:name="com.afk.allforkids_aos.ResetBadgeActivity"
             android:exported="false" />
         <activity
-            android:name=".MyPageBirthActivity"
+            android:name="com.afk.allforkids_aos.MyPageBirthActivity"
             android:exported="false" />
         <activity
-            android:name=".MyPageSettingActivity"
+            android:name="com.afk.allforkids_aos.MyPageSettingActivity"
             android:exported="false" />
         <activity
-            android:name=".AnnouncementDetailActivity"
+            android:name="com.afk.allforkids_aos.AnnouncementDetailActivity"
             android:exported="true" />
         <activity
-            android:name=".AnnouncementActivity"
+            android:name="com.afk.allforkids_aos.AnnouncementActivity"
             android:exported="true" />
         <activity
-            android:name=".WithDrawalActivity"
+            android:name="com.afk.allforkids_aos.WithDrawalActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.afk.allforkids_aos.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -82,10 +82,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".landing.LoginActivity">
+        <activity android:name="com.afk.allforkids_aos.landing.LoginActivity">
             <!-- 필요한 인텐트 필터 및 설정 추가 -->
         </activity>
-        <activity android:name=".landing.SignUpActivity">
+        <activity android:name="com.afk.allforkids_aos.landing.SignUpActivity">
             <!-- 다른 설정들 -->
         </activity>
 
